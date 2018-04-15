@@ -1,0 +1,103 @@
+body {
+  background-color: #ffffff;
+  text-align: center;
+  /*display: inline-block;*/
+
+  font-family: 'Chivo', sans-serif;
+}
+
+header {
+  height: 20vh;
+  padding: 2vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+li2 {
+  padding-left: 25px;
+}
+
+div {
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  justify-content: center;
+  flex-direction: column;
+}
+
+li {
+  padding-bottom: 7px;
+}
+
+a {
+  text-decoration: none;
+  color: #4F4F4F;
+  font-size: 20px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+
+}
+
+h1 {
+  display: flex;
+  font-size: 72px;
+  color: #136B71;
+  padding-bottom: 50px;
+}
+
+hr {
+    /*display: block;*/
+    justify-content: center;
+    width: 40%;
+    border-style: inset;
+    border-width: 1px;
+    border-color: #136B71;
+}
+
+text {
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
+  padding-top: 50px;
+  padding-bottom: 30px;
+  font-size: 36px;
+  color: #136B71;
+}
+
+h3 {
+  font-size: 22px;
+  color: #828282;
+}
+
+h4 {
+  font-size: 22px;
+  color: #828282;
+  font-weight: 900;
+}
+
+h5 {
+  padding-top: 50px;
+  padding-bottom: 30px;
+  font-size: 36px;
+  color: #828282;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  text-align: left;
+}
+
+space {
+  padding-top: 150px;
+}
+
+small_space{
+  padding-top: 20px;
+}
+}

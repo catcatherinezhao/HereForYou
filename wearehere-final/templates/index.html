@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <title> Home | We're here for you</title>
+ <meta name="description" content="description of the website">
+ <meta name="author" content="wearehere">
+ <link rel="stylesheet" type="text/css" href="../static/css/reset.css">
+ <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+ <link href="https://fonts.googleapis.com/css?family=Baloo+Da|Chivo" rel="stylesheet">  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+ <meta name="viewport" content="width=device-width,initial-scale=1.0">
+ <script async="" src="https://www.google-analytics.com/analytics.js"></script>
+ <style type="text/css">#mc_embed_signup input.mce_inline_error { border-color:#6B0505; } #mc_embed_signup div.mce_inline_error { margin: 0 0 1em 0; padding: 5px 10px; background-color:#6B0505; font-weight: bold; z-index: 1; color:#fff; }</style>
+ <pictureheader>
+     <div2>
+       <a href="/">Dartmouth—Here for You</a>
+     </div2>
+     <div2>
+       <li2><a href="{{ url_for('aware') }}">Be Aware</a></li2>
+       <li2><a href="{{ url_for('resources') }}">Resources</a></li2>
+       <li2><a href="{{ url_for('immediate') }}">Immediate&nbspHelp</a></li2>
+       <li2><a href="{{ url_for('involve') }}">Get&nbspInvolved</a></li2>
+       <li2><a href="{{ url_for('about') }}">About&nbspUs</a></li2>
+
+
+     </div2>
+   </pictureheader>
+   <div2 class="container">
+     <a href="#report">
+       <img src="../static/img/blossomsarrow.jpg" alt="woman standing in front of a building with cherry blossom trees" style="height:100%;width:100%" >
+     </a>
+   </div2>
+</head>
+<body data-gr-c-s-loaded="true" style="zoom: 1;">
+ <a href="/" class="brand-link">
+ </a>
+  <section id="report">
+    &emsp;
+    <main>
+      <div>
+        <h1>Make a Report</h1>
+      </div>
+    </main>
+    <hr>
+    <form method="POST" action="/">
+          <legend><span class="number">1</span> Preliminary Information</legend>
+          <div>
+              <label for="name">Your name</label>
+              <input type="text" id="name" name="user_name">
+          </div>
+          <div>
+              <label for="perpetrator">Perpetrator(s) name(s) (if known)</label>
+              <input type="text" id="perpetrator" name="perp_name">
+          </div>
+          <div>
+              <label for="perp_descrip">Description of the perpetrator(s)</label>
+              <textarea id="msg" name="perp_descrip"></textarea>
+          </div>
+          <legend><span class="number">2</span> Incident Details</legend>
+            <div>
+                <label for="location">Location</label>
+                <input type="text" id="location" name="location">
+            </div>
+            <div>
+                <label for="date">Date</label>
+                <input type="text" id="date" name="date">
+            </div>
+            <div>
+                <label for="time">Time</label>
+                <input type="text" id="time" name="time">
+            </div>
+            <div>
+                <label for="incident"> Description of incident</label>
+                <textarea id="msg" name="incident"></textarea>
+            </div>
+            <div>
+                <label for="contact">Who have you contacted about this incident (N/A if no one)</label>
+                <textarea id="msg" name="contact"></textarea>
+            </div>
+          <legend><span class="number">3</span>Contact Options</legend>
+          <div class="checkbox">
+            <div class="inline-field">
+              <label for="nocontact">
+                <input id="nocontact" type="checkBox" name="nocontact">
+                I do not wish to be contacted further
+              </label>
+            </div>
+            <div class="inline-field">
+              <label for="talk">
+                <input id="talk" type="checkBox" name="talk">
+                I would like to talk to someone
+              </label>
+            </div>
+            <div class="inline-field">
+              <label for="legal">
+                <input id="legal" type="checkBox" name="legal">
+                I would like to take legal action
+              </label>
+            </div>
+          </div>
+          <button type="submit">Submit</button>
+    </form>
+  </section>
+  </body>
+  <footer class="row footer">
+  </footer>
+</html>
